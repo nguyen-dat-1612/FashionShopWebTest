@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class HomePageTest extends BaseTest {
+
     private WebDriver driver;
     private HomePage homePage;
     private final String BASE_URL = "http://localhost:5500/src/main/webapp/pages/home.html";

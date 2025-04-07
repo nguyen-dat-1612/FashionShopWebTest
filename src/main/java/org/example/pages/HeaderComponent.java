@@ -1,6 +1,7 @@
 package org.example.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,22 +15,11 @@ public class HeaderComponent {
     private final WebDriverWait wait;
 
     // Locator
-    private final By header = By.id("header");
     private final By loginBtn = By.cssSelector(".btn.btn-outline-primary.me-2");
     private final By registerBtn = By.cssSelector(".btn.btn-primary");
     private final By loginEmail = By.id("loginEmail");
     private final By loginPassword = By.id("loginPassword");
     private final By submitBtnLogin = By.cssSelector("#loginForm button[type='submit']");
-//    private final By registerFullNameField = By.id("registerFullname");
-//    private final By registerEmailField = By.id("registerEmail");
-//    private final By registerPasswordField = By.id("registerPassword");
-//    private final By registerConfirmPasswordField = By.id("confirmPassword");
-//    private final By registerPhoneField = By.id("registerPhone");
-//    private final By registerAddressField = By.id("registerAddress");
-//    private final By maleRadio = By.id("registerGenderMale");
-//    private final By femaleRadio = By.id("registerGenderFemale");
-//    private final By otherRadio = By.id("registerGenderOther");
-//    private final By registerBirthdayField = By.id("registerBirthday");
     private final By submitBtnRegister = By.id("registerBtn");
     private final By profileIcon = By.id("profileIcon");
     private final By cartIcon = By.id("cartIcon");
@@ -37,6 +27,8 @@ public class HeaderComponent {
     private final By registerModal = By.id("registerModal");
     private final By loginBtnVisible = By.cssSelector(".btn.btn-outline-primary.me-2:not([style*='display:none'])");
     private final By registerBtnVisible = By.cssSelector(".btn.btn-primary:not([style*='display:none'])");
+    private final By loginMessageVisible = By.id("loginMessage");
+    private final By registerMessageVisible = By.id("registerMessage");
     public HeaderComponent(WebDriver driver) {
         this.webDriver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -115,6 +107,35 @@ public class HeaderComponent {
     public boolean isRegisterButtonDisplayed() {
         try {
             return webDriver.findElement(registerBtn).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isLoginErrorDisplayed() {
+        try {
+            return webDriver.findElement(loginMessageVisible).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    public boolean isRegisterSuccessMessageDisplayed() {
+        try {
+            WebElement successMessage = webDriver.findElement(By.cssSelector(".alert-success"));
+
+            // Scroll vào tầm nhìn nếu cần
+            ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoView(true);", successMessage);
+
+            return successMessage.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isRegisterErrorMessageDisplayed() {
+        try {
+            WebElement message = webDriver.findElement(registerMessageVisible);
+            return message.isDisplayed() && message.getAttribute("class").contains("alert-danger");
         } catch (Exception e) {
             return false;
         }

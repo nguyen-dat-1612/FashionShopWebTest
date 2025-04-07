@@ -6,8 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-import static io.reactivex.rxjava3.internal.util.NotificationLite.getValue;
-
 public class ProductDetailPage extends BasePage {
 
     // Locators
@@ -28,9 +26,12 @@ public class ProductDetailPage extends BasePage {
     private final By bundleItems = By.cssSelector(".bundle-items .deal-item");
     private final By comboTotal = By.id("comboTotal");
     private final By buyDealBtn = By.cssSelector(".bundle-summary .btn-buy-now");
+    private final By loginAlertVisible = By.id("loginAlert");
 
+    private HeaderComponent headerComponent;
     public ProductDetailPage(WebDriver driver) {
         super(driver);
+        this.headerComponent = new HeaderComponent(driver);
     }
 
     /**
@@ -146,35 +147,20 @@ public class ProductDetailPage extends BasePage {
         scrollAndClick(buyNowBtn);
     }
 
-    /**
-     * Chọn sản phẩm bundle theo index
-     */
-    public void selectBundleItem(int index) {
-        List<WebElement> items = waitForAllElementsVisible(bundleItems);
-        if (index >= 0 && index < items.size()) {
-            WebElement checkbox = items.get(index).findElement(By.cssSelector(".deal-checkbox"));
-            checkbox.click(); // Gọi trực tiếp
-        }
+    public boolean isAlertMessageDisplayed(String expectedMessage) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        By loginAlertLocator = By.id("loginAlert"); // Giả định locator là id="loginAlert"
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loginAlertLocator));
+
+        WebElement alert = driver.findElement(loginAlertLocator);
+        String actualMessage = alert.getText().trim();
+
+        // Kiểm tra thêm lớp d-none để chắc chắn thông báo hiển thị
+        boolean isVisible = !alert.getAttribute("class").contains("d-none");
+        return isVisible && actualMessage.equals(expectedMessage);
     }
 
-    /**
-     * Lấy tổng giá trị combo
-     */
-    public String getComboTotal() {
-        return getText(comboTotal);
-    }
-
-    /**
-     * Click nút mua deal sốc
-     */
-    public void clickBuyDeal() {
-        scrollAndClick(buyDealBtn);
-    }
-
-    /**
-     * Kiểm tra section deal sốc hiển thị
-     */
-    public boolean isDealSectionDisplayed() {
-        return isElementDisplayed(mainDealItem);
+    public HeaderComponent getHeader() {
+        return headerComponent;
     }
 }
