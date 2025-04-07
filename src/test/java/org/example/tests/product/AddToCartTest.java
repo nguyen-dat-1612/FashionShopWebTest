@@ -12,6 +12,7 @@
     import org.openqa.selenium.support.ui.ExpectedConditions;
     import org.openqa.selenium.support.ui.WebDriverWait;
     import org.testng.Assert;
+    import org.testng.annotations.AfterClass;
     import org.testng.annotations.BeforeClass;
     import org.testng.annotations.BeforeMethod;
     import org.testng.annotations.Test;
@@ -84,11 +85,14 @@
             Assert.assertTrue(isDisplayed,
                     "Thông báo yêu cầu đăng nhập không hiển thị hoặc nội dung sai. Kỳ vọng: '" + loginMessage + "'");
         }
-        // Hàm hỗ trợ để xóa localStorage (giả lập chưa đăng nhập)
-        // Hàm hỗ trợ để xóa localStorage (giả lập chưa đăng nhập)
-        private void localStorageClear() {
-            JavascriptExecutor js = (JavascriptExecutor) driver;
-            js.executeScript("window.localStorage.clear();");
+
+
+        // Hoặc nếu bạn muốn đóng sau khi tất cả các test hoàn thành
+        @AfterClass
+        public void tearDownClass() {
+            if (driver != null) {
+                driver.quit();  // Đảm bảo đóng trình duyệt sau tất cả các test
+            }
         }
 
     }
