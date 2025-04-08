@@ -30,6 +30,7 @@
             driver.manage().window().maximize();
             productDetailPage = new ProductDetailPage(driver);
             loginHelper = new LoginHelper(driver);  // Sử dụng LoginHelper
+
         }
 
         @BeforeMethod
@@ -41,7 +42,7 @@
         @Test (description = "Thêm sản phẩm vào giỏ hàng thành công khi đã đăng nhập")
         public void testAddSingleProductToCartWhenLoggedIn() {
             // Đăng nhập sử dụng LoginHelper
-            loginHelper.login("nguyendatthcspv@gmail.com", "123456");
+            loginHelper.login("nguyendatthcspv@gmail.com", "1234567");
 
             // Chọn màu và size
             productDetailPage.selectColor(1);

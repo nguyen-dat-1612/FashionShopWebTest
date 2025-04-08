@@ -1,108 +1,254 @@
 package org.example.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class CartPage {
     private WebDriver driver;
+    private WebDriverWait wait;
+
+    // Locators
+    private final By selectAllCheckbox = By.id("select-all");
+    private final By cartItemsContainer = By.id("cart-items");
+    private final By cartItems = By.className("cart-item");
+    private final By itemCheckboxes = By.className("item-checkbox");
+    private final By subtotalValue = By.id("subtotal");
+    private final By shippingValue = By.id("shipping");
+    private final By totalValue = By.id("total");
+    private final By checkoutButton = By.id("checkout-button");
+    private final By emptyCartMessage = By.xpath("//h4[contains(text(), 'Giỏ hàng của bạn đang trống')]");
+    private final By continueShoppingButton = By.xpath("//a[contains(text(), 'Tiếp tục mua sắm')]");
+    private final By summaryCard = By.className("summary-card");
 
     public CartPage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    /**
-     * Kiểm tra một sản phẩm có được chọn không
-     * @param variantId ID của biến thể sản phẩm
-     * @return true nếu sản phẩm được chọn
-     */
-    public boolean isItemSelected(int variantId) {
-        try {
-            // Tìm phần tử cart-item chứa variant ID này
-            WebElement cartItem = driver.findElement(
-                    By.cssSelector(String.format(".cart-item[data-variant-id='%d']", variantId)));
+    public CartPage open() {
+        driver.get("http://localhost:5500/src/main/webapp/pages/cart.html");
+        return this;
+    }
 
-            // Kiểm tra nếu cartItem tồn tại, tức là sản phẩm có trong giỏ hàng
-            return cartItem != null && cartItem.isDisplayed();
-        } catch (NoSuchElementException e) {
+    public void waitForPageToLoad() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(cartItemsContainer));
+    }
+
+    public boolean isCartPageLoaded() {
+        try {
+            wait.until(ExpectedConditions.or(
+                    ExpectedConditions.visibilityOfElementLocated(cartItems),
+                    ExpectedConditions.visibilityOfElementLocated(emptyCartMessage)
+            ));
+            return true;
+        } catch (Exception e) {
             return false;
         }
     }
 
-    /**
-     * Kiểm tra checkbox của sản phẩm có được chọn không
-     * @param variantId ID của biến thể sản phẩm
-     * @return true nếu checkbox được chọn
-     */
-    public boolean isItemCheckboxChecked(int variantId) {
+    public boolean isEmptyCartDisplayed() {
         try {
-            // Tìm cart-item chứa variant ID cần kiểm tra
-            WebElement cartItem = driver.findElement(
-                    By.cssSelector(String.format(".cart-item[data-variant-id='%d']", variantId)));
-
-            // Tìm checkbox trong cart-item đó
-            WebElement checkbox = cartItem.findElement(By.cssSelector(".item-checkbox"));
-
-            // Kiểm tra trạng thái của checkbox
-            return checkbox.isSelected();
-        } catch (NoSuchElementException e) {
+            return driver.findElement(emptyCartMessage).isDisplayed();
+        } catch (Exception e) {
             return false;
         }
     }
 
-    /**
-     * Kiểm tra sản phẩm có class selected-highlight không
-     * @param variantId ID của biến thể sản phẩm
-     * @return true nếu sản phẩm có class selected-highlight
-     */
-    public boolean hasSelectedHighlight(int variantId) {
+    public boolean isSummaryCardDisplayed() {
         try {
-            // Tìm cart-item chứa variant ID cần kiểm tra
-            WebElement cartItem = driver.findElement(
-                    By.cssSelector(String.format(".cart-item[data-variant-id='%d']", variantId)));
-
-            // Kiểm tra xem phần tử có class selected-highlight không
-            String classes = cartItem.getAttribute("class");
-            return classes != null && classes.contains("selected-highlight");
-        } catch (NoSuchElementException e) {
+            return driver.findElement(summaryCard).isDisplayed();
+        } catch (Exception e) {
             return false;
         }
     }
 
-    /**
-     * Lấy thông tin màu sắc của sản phẩm
-     * @param variantId ID của biến thể sản phẩm
-     * @return Chuỗi thể hiện màu sắc
-     */
-    public String getProductColor(int variantId) {
-        WebElement cartItem = driver.findElement(
-                By.cssSelector(String.format(".cart-item[data-variant-id='%d']", variantId)));
-        return cartItem.findElement(By.cssSelector(".cart-item-details .me-2")).getText().replace("Màu: ", "");
+    public int getCartItemCount() {
+        try {
+            List<WebElement> items = driver.findElements(cartItems);
+            return items.size();
+        } catch (Exception e) {
+            return 0;
+        }
     }
 
-    /**
-     * Lấy thông tin kích thước của sản phẩm
-     * @param variantId ID của biến thể sản phẩm
-     * @return Chuỗi thể hiện kích thước
-     */
-    public String getProductSize(int variantId) {
-        WebElement cartItem = driver.findElement(
-                By.cssSelector(String.format(".cart-item[data-variant-id='%d']", variantId)));
-        return cartItem.findElement(By.cssSelector(".cart-item-details span:last-child")).getText().replace("Size: ", "");
+    public void selectAllItems() {
+        WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(selectAllCheckbox));
+        if (!checkbox.isSelected()) {
+            checkbox.click();
+        }
     }
 
-    /**
-     * Lấy số lượng sản phẩm
-     * @param variantId ID của biến thể sản phẩm
-     * @return Số lượng sản phẩm
-     */
-    public int getProductQuantity(int variantId) {
-        WebElement cartItem = driver.findElement(
-                By.cssSelector(String.format(".cart-item[data-variant-id='%d']", variantId)));
-        String quantityText = cartItem.findElement(By.cssSelector(".cart-item-quantity span")).getText();
-        return Integer.parseInt(quantityText);
+    public void deselectAllItems() {
+        WebElement checkbox = wait.until(ExpectedConditions.elementToBeClickable(selectAllCheckbox));
+        if (checkbox.isSelected()) {
+            checkbox.click();
+        }
+    }
+
+    public void selectItem(int itemIndex) {
+        List<WebElement> checkboxes = driver.findElements(itemCheckboxes);
+        if (itemIndex >= 0 && itemIndex < checkboxes.size()) {
+            WebElement checkbox = checkboxes.get(itemIndex);
+            if (!checkbox.isSelected()) {
+                checkbox.click();
+            }
+        }
+    }
+
+    public void deselectItem(int itemIndex) {
+        List<WebElement> checkboxes = driver.findElements(itemCheckboxes);
+        if (itemIndex >= 0 && itemIndex < checkboxes.size()) {
+            WebElement checkbox = checkboxes.get(itemIndex);
+            if (checkbox.isSelected()) {
+                checkbox.click();
+            }
+        }
+    }
+
+    public void increaseQuantity(int itemIndex) {
+        List<WebElement> items = driver.findElements(cartItems);
+        if (itemIndex >= 0 && itemIndex < items.size()) {
+            WebElement item = items.get(itemIndex);
+            WebElement quantityControls = item.findElement(By.cssSelector(".cart-item-quantity .quantity-controls"));
+            List<WebElement> increaseButton = quantityControls.findElements(By.tagName("button"));
+
+            // Lưu lại tổng trước khi click
+            WebElement total = driver.findElement(totalValue);
+            String oldTotal = total.getText();
+
+            increaseButton.get(1).click();
+
+            // Chờ tổng tiền thay đổi
+            wait.until(ExpectedConditions.not(
+                    ExpectedConditions.textToBePresentInElementLocated(totalValue, oldTotal)
+            ));
+        }
+    }
+
+    public void decreaseQuantity(int itemIndex) {
+        List<WebElement> items = driver.findElements(cartItems);
+        if (itemIndex >= 0 && itemIndex < items.size()) {
+            WebElement item = items.get(itemIndex);
+            WebElement quantityControls = item.findElement(By.cssSelector(".cart-item-quantity .quantity-controls"));
+            List<WebElement> decreaseButton = quantityControls.findElements(By.tagName("button"));
+
+            // Lưu lại tổng tiền trước khi giảm
+            WebElement total = driver.findElement(totalValue);
+            String oldTotal = total.getText();
+
+            decreaseButton.get(0).click();
+
+            // Chờ tổng tiền thay đổi
+            wait.until(ExpectedConditions.not(
+                    ExpectedConditions.textToBePresentInElementLocated(totalValue, oldTotal)
+            ));
+        }
+    }
+
+    public void removeItem(int itemIndex) {
+        List<WebElement> items = driver.findElements(cartItems);
+        if (itemIndex >= 0 && itemIndex < items.size()) {
+            WebElement item = items.get(itemIndex);
+            WebElement removeButton = item.findElement(By.xpath(".//button[text()='Xóa']"));
+            removeButton.click();
+
+            // Accept the confirmation dialog
+            driver.switchTo().alert().accept();
+
+            // Wait for the removal operation to complete
+            wait.until(ExpectedConditions.invisibilityOf(item));
+        }
+    }
+
+    public int getQuantity(int itemIndex) {
+        List<WebElement> items = driver.findElements(cartItems);
+        if (itemIndex >= 0 && itemIndex < items.size()) {
+            WebElement item = items.get(itemIndex);
+            WebElement quantityElement = item.findElement(By.className("px-2"));
+//            WebElement quantityElement = item.findElement(By.xpath(".//div[@class='cart-item-quantity']//span"));
+            return Integer.parseInt(quantityElement.getText().trim());
+        }
+        return -1;
+    }
+
+    public String getItemName(int itemIndex) {
+        List<WebElement> items = driver.findElements(cartItems);
+        if (itemIndex >= 0 && itemIndex < items.size()) {
+            WebElement item = items.get(itemIndex);
+            WebElement nameElement = item.findElement(By.className("mb-1"));
+            return nameElement.getText().trim();
+        }
+        return "";
+    }
+
+    public String getItemPrice(int itemIndex) {
+        List<WebElement> items = driver.findElements(cartItems);
+        if (itemIndex >= 0 && itemIndex < items.size()) {
+            WebElement item = items.get(itemIndex);
+            WebElement priceElement = item.findElement(By.xpath(".//div[@class='cart-item-total']/span"));
+            return priceElement.getText().trim();
+        }
+        return "";
+    }
+
+    public String getSubtotal() {
+        return driver.findElement(subtotalValue).getText().trim();
+    }
+
+    public String getShipping() {
+        return driver.findElement(shippingValue).getText().trim();
+    }
+
+    public String getTotal() {
+        return driver.findElement(totalValue).getText().trim();
+    }
+
+    public void clickCheckoutButton() {
+        WebElement button = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
+        button.click();
+    }
+
+    public void clickContinueShopping() {
+        if (isEmptyCartDisplayed()) {
+            WebElement button = wait.until(ExpectedConditions.elementToBeClickable(continueShoppingButton));
+            button.click();
+        }
+    }
+
+    public List<Boolean> getSelectedItems() {
+        List<WebElement> checkboxes = driver.findElements(itemCheckboxes);
+        return checkboxes.stream().map(WebElement::isSelected).collect(Collectors.toList());
+    }
+
+    public boolean isAllItemsSelected() {
+        List<Boolean> selectedStatus = getSelectedItems();
+        return !selectedStatus.isEmpty() && selectedStatus.stream().allMatch(selected -> selected);
+    }
+
+    public boolean isErrorMessageDisplayed() {
+        try {
+            WebElement errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.className("alert-danger")));
+            return errorMessage.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean isSuccessMessageDisplayed() {
+        try {
+            WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.className("alert-success")));
+            return successMessage.isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
     }
 }
