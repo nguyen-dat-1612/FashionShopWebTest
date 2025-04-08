@@ -33,6 +33,11 @@ public class ProfilePage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(avatarImg));
     }
+    public ProfilePage open() {
+        driver.get("http://localhost:5500/src/main/webapp/pages/profile.html");
+        return this;
+    }
+
 
     public boolean isAvatarDisplayed() {
         return driver.findElement(avatarImg).isDisplayed();
