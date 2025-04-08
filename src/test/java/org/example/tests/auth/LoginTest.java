@@ -1,5 +1,6 @@
 package org.example.tests.auth;
 
+import org.example.constants.Credentials;
 import org.example.pages.HeaderComponent;
 import org.example.pages.HomePage;
 import org.example.tests.BaseTest;
@@ -37,7 +38,7 @@ public class LoginTest extends BaseTest {
     public void testSuccessfulLogin() {
         HeaderComponent header = homePage.getHeader();
         header.clickLoginButton();
-        header.fillLoginForm("nguyendatthcspv@gmail.com", "123456");
+        header.fillLoginForm(Credentials.getUsername(), Credentials.getPassword());
         header.submitLoginForm();
 
 
@@ -51,7 +52,7 @@ public class LoginTest extends BaseTest {
     public void testUnSuccessfulLogin() {
         HeaderComponent header = homePage.getHeader();
         header.clickLoginButton();
-        header.fillLoginForm("nguyendatthcspv@gmail.com", "1234567");
+        header.fillLoginForm(Credentials.getUsername(), Credentials.getPassword());
         header.submitLoginForm();
 
         // Chờ thông báo hiển thị thay vì sleep cứng

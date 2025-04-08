@@ -1,5 +1,6 @@
 package org.example.tests.product;
 
+import org.example.constants.Credentials;
 import org.example.pages.CartPage;
 import org.example.pages.ProductDetailPage;
 import org.example.utils.DriverManager;
@@ -41,7 +42,7 @@ public class BuyNowTest {
     @Test(description = "Nhấn mua sản phẩm thành công khi đã đăng nhập")
     public void testBuyNowWhenLoggedIn() {
         // Đăng nhập sử dụng LoginHelper
-        loginHelper.login("nguyendatthcspv@gmail.com", "123456");
+        loginHelper.login(Credentials.getUsername(), Credentials.getPassword());
 
         // Chọn màu và size
         productDetailPage.selectColor(1);

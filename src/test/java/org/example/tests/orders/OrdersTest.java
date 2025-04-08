@@ -1,5 +1,6 @@
 package org.example.tests.orders;
 
+import org.example.constants.Credentials;
 import org.example.pages.OrdersPage;
 import org.example.tests.BaseTest;
 import org.example.utils.DriverManager;
@@ -26,7 +27,7 @@ public class OrdersTest extends BaseTest {
 
         // Đăng nhập trước
         driver.get("http://localhost:5500/src/main/webapp/pages/home.html");
-        loginHelper.login("nguyendatthcspv@gmail.com", "1234567");
+        loginHelper.login(Credentials.getUsername(), Credentials.getPassword());
 
         slowDown(1000);
 

@@ -1,5 +1,6 @@
 package org.example.tests.orders;
 
+import org.example.constants.Credentials;
 import org.example.pages.OrderDetailPage;
 import org.example.pages.OrdersPage;
 import org.example.tests.BaseTest;
@@ -33,7 +34,7 @@ public class OrderDetailTest extends BaseTest {
 
         // Đăng nhập trước
         driver.get("http://localhost:5500/src/main/webapp/pages/home.html");
-        loginHelper.login("nguyendatthcspv@gmail.com", "1234567");
+        loginHelper.login(Credentials.getUsername(), Credentials.getPassword());
         slowDown(1000);
 
         // Mở trang đơn hàng để lấy ID đơn hàng

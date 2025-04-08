@@ -1,5 +1,6 @@
 package org.example.tests.cart;
 
+import org.example.constants.Credentials;
 import org.example.pages.CartPage;
 import org.example.tests.BaseTest;
 import org.example.utils.DriverManager;
@@ -29,7 +30,7 @@ public class ViewCartTest extends BaseTest {
 
         // Đăng nhập trước
         driver.get("http://localhost:5500/src/main/webapp/pages/home.html");
-        loginHelper.login("nguyendatthcspv@gmail.com", "1234567");
+        loginHelper.login(Credentials.getUsername(), Credentials.getPassword());
 
         slowDown(1000);
 

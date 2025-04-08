@@ -1,5 +1,6 @@
 package org.example.tests.profile;
 
+import org.example.constants.Credentials;
 import org.example.pages.ProfilePage;
 import org.example.tests.BaseTest;
 import org.example.utils.DriverManager;
@@ -36,7 +37,7 @@ public class ViewProfileTest  extends BaseTest {
         driver.get("http://localhost:5500/src/main/webapp/pages/home.html"); // hoặc login.html nếu bạn có
 
         // Đăng nhập trước
-        loginHelper.login("nguyendatthcspv@gmail.com", "123456");
+        loginHelper.login(Credentials.getUsername(), Credentials.getPassword());
 
         slowDown(2000);
 

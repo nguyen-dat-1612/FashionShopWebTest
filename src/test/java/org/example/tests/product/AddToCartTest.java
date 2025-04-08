@@ -1,5 +1,6 @@
     package org.example.tests.product;
 
+    import org.example.constants.Credentials;
     import org.example.pages.HeaderComponent;
     import org.example.pages.ProductDetailPage;
     import org.example.tests.BaseTest;
@@ -42,7 +43,7 @@
         @Test (description = "Thêm sản phẩm vào giỏ hàng thành công khi đã đăng nhập")
         public void testAddSingleProductToCartWhenLoggedIn() {
             // Đăng nhập sử dụng LoginHelper
-            loginHelper.login("nguyendatthcspv@gmail.com", "1234567");
+            loginHelper.login(Credentials.getUsername(), Credentials.getPassword());
 
             // Chọn màu và size
             productDetailPage.selectColor(1);

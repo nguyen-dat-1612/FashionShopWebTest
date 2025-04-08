@@ -1,5 +1,6 @@
 package org.example.tests.ChangePass;
 
+import org.example.constants.Credentials;
 import org.example.pages.ChangePassPage;
 import org.example.tests.BaseTest;
 import org.example.utils.DriverManager;
@@ -29,7 +30,7 @@ public class ChangePassTest extends BaseTest {
 
         // Đăng nhập và vào trang profile một lần duy nhất
         driver.get("http://localhost:5500/src/main/webapp/pages/home.html");
-        loginHelper.login("nguyendatthcspv@gmail.com", "1234567");
+        loginHelper.login(Credentials.getUsername(), Credentials.getPassword());
         slowDown(2000);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(By.className("avatar-img")));
