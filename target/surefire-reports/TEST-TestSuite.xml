@@ -1,0 +1,1277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="427.791" tests="53" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="webdriver.chrome.driver" value="src/test/resources/drivers/chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Workspace\FashionShopWebTest\target\test-classes;D:\Workspace\FashionShopWebTest\target\classes;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\nguye\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\nguye\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\nguye\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\nguye\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\nguye\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\nguye\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\nguye\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\nguye\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\nguye\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\nguye\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\nguye\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\nguye\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\nguye\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\nguye\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\nguye\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\nguye\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\nguye\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\nguye\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\nguye\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\nguye\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\nguye\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\nguye\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\nguye\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\nguye\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\nguye\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\nguye\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\nguye\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\nguye\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\nguye\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\nguye\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\nguye\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\nguye\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\nguye\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\nguye\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\nguye\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\nguye\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\nguye\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\nguye\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\nguye\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\nguye\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\nguye\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\nguye\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-java\7.0.0\cucumber-java-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-core\7.0.0\cucumber-core-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-gherkin\7.0.0\cucumber-gherkin-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.0.0\cucumber-gherkin-messages-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\nguye\.m2\repository\io\cucumber\tag-expressions\4.0.2\tag-expressions-4.0.2.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-expressions\13.0.1\cucumber-expressions-13.0.1.jar;C:\Users\nguye\.m2\repository\io\cucumber\datatable\7.0.0\datatable-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-plugin\7.0.0\cucumber-plugin-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\docstring\7.0.0\docstring-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\create-meta\6.0.1\create-meta-6.0.1.jar;C:\Users\nguye\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-spring\7.0.0\cucumber-spring-7.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Saigon"/>
+    <property name="user.country.format" value="VN"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
+    <property name="sun.java.command" value="C:\Users\nguye\AppData\Local\Temp\surefire11071561507208764527\surefirebooter-20250415142425431_3.jar C:\Users\nguye\AppData\Local\Temp\surefire11071561507208764527 2025-04-15T14-24-25_285-jvmRun1 surefire-20250415142425431_1tmp surefire_0-20250415142425431_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Workspace\FashionShopWebTest\target\test-classes;D:\Workspace\FashionShopWebTest\target\classes;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\nguye\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\nguye\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\nguye\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\nguye\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\nguye\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\nguye\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\nguye\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\nguye\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\nguye\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\nguye\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\nguye\.m2\repository\org\testng\testng\7.8.0\testng-7.8.0.jar;C:\Users\nguye\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\nguye\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\nguye\.m2\repository\org\webjars\jquery\3.6.1\jquery-3.6.1.jar;C:\Users\nguye\.m2\repository\io\github\bonigarcia\webdrivermanager\5.5.3\webdrivermanager-5.5.3.jar;C:\Users\nguye\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java\3.3.3\docker-java-3.3.3.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-core\3.3.3\docker-java-core-3.3.3.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-api\3.3.3\docker-java-api-3.3.3.jar;C:\Users\nguye\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.75\bcpkix-jdk18on-1.75.jar;C:\Users\nguye\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.75\bcprov-jdk18on-1.75.jar;C:\Users\nguye\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.75\bcutil-jdk18on-1.75.jar;C:\Users\nguye\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.3\docker-java-transport-httpclient5-3.3.3.jar;C:\Users\nguye\.m2\repository\com\github\docker-java\docker-java-transport\3.3.3\docker-java-transport-3.3.3.jar;C:\Users\nguye\.m2\repository\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\nguye\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\nguye\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\nguye\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\nguye\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\nguye\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\nguye\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\nguye\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\nguye\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\nguye\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\nguye\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\nguye\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\nguye\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\nguye\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\nguye\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\nguye\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\nguye\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\nguye\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\nguye\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\nguye\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\nguye\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\nguye\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\nguye\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\nguye\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;C:\Users\nguye\.m2\repository\org\slf4j\slf4j-simple\1.7.36\slf4j-simple-1.7.36.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-java\7.0.0\cucumber-java-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-core\7.0.0\cucumber-core-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-gherkin\7.0.0\cucumber-gherkin-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.0.0\cucumber-gherkin-messages-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\messages\17.1.1\messages-17.1.1.jar;C:\Users\nguye\.m2\repository\io\cucumber\tag-expressions\4.0.2\tag-expressions-4.0.2.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-expressions\13.0.1\cucumber-expressions-13.0.1.jar;C:\Users\nguye\.m2\repository\io\cucumber\datatable\7.0.0\datatable-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-plugin\7.0.0\cucumber-plugin-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\docstring\7.0.0\docstring-7.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\html-formatter\17.0.0\html-formatter-17.0.0.jar;C:\Users\nguye\.m2\repository\io\cucumber\create-meta\6.0.1\create-meta-6.0.1.jar;C:\Users\nguye\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nguye\.m2\repository\io\cucumber\cucumber-spring\7.0.0\cucumber-spring-7.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\nguye"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-23"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Workspace\FashionShopWebTest"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\nguye\AppData\Local\Temp\surefire11071561507208764527\surefirebooter-20250415142425431_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="23.0.2+7-58"/>
+    <property name="user.name" value="nguye"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\nguye\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\nguye\AppData\Local\Temp\"/>
+    <property name="java.version" value="23.0.2"/>
+    <property name="user.dir" value="D:\Workspace\FashionShopWebTest"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.language.format" value="vi"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-23\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;%JAVA_HOME%\bin;D:\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Apache\Maven\bin;C:\flutter\bin;C:\Users\nguye\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\nguye\AppData\Local\Programs\Python\Python312\;C:\Users\nguye\AppData\Local\Programs\Python\Launcher\;C:\Users\nguye\AppData\Local\Microsoft\WindowsApps;D:\Visual Studio\Microsoft VS Code\bin;C:\Program Files\Java\jdk-23\bin;C:\Users\nguye\AppData\Local\Android\Sdk\platform-tools;C:\Users\nguye\AppData\Roaming\npm;D:\heroku\bin;C:\Users\nguye\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="23.0.2+7-58"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testSuccessfulLogin" classname="org.example.tests.auth.LoginTest" time="1.9">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:24:27 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:24:27 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:24:27 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:24:27 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Login Tests bắt đầu
+thg 4 15, 2025 2:24:27 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:24:28 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:24:28 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:24:30 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:24:30 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testSuccessfulLogin
+thg 4 15, 2025 2:24:30 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng nhập thành công
+thg 4 15, 2025 2:24:32 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testSuccessfulLogin đã PASS
+thg 4 15, 2025 2:24:32 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 1897 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testUnSuccessfulLogin" classname="org.example.tests.auth.LoginTest" time="2.617">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:24:32 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:24:32 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:24:34 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:24:34 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testUnSuccessfulLogin
+thg 4 15, 2025 2:24:34 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng nhập không thành công thành công
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testUnSuccessfulLogin đã PASS
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2616 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testSuccessfulRegistration" classname="org.example.tests.auth.RegisterTest" time="3.104">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Login Tests kết thúc
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 2
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 2
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Register Test bắt đầu
+thg 4 15, 2025 2:24:37 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:24:38 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:24:38 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:24:39 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:24:39 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testSuccessfulRegistration
+thg 4 15, 2025 2:24:39 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng ký tài khoản mới thành công
+thg 4 15, 2025 2:24:42 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testSuccessfulRegistration đã PASS
+thg 4 15, 2025 2:24:42 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 3104 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testRegisterWithExistingEmail" classname="org.example.tests.auth.RegisterTest" time="11.36">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.id: registerModal (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 8ed9447907cee2676d6417213b000931" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.id: registerModal (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ed9447907cee2676d6417213b000931
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.example.pages.HeaderComponent.fillRegisterForm(HeaderComponent.java:72)
+	at org.example.tests.auth.RegisterTest.testRegisterWithExistingEmail(RegisterTest.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-err><![CDATA[thg 4 15, 2025 2:24:42 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:24:42 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRegisterWithExistingEmail
+thg 4 15, 2025 2:24:42 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng ký với email đã tồn tại
+thg 4 15, 2025 2:24:53 CH org.example.listeners.TestListener onTestFailure
+SEVERE: Test testRegisterWithExistingEmail đã FAIL
+thg 4 15, 2025 2:24:53 CH org.example.listeners.TestListener onTestFailure
+SEVERE: Lỗi: Expected condition failed: waiting for visibility of element located by By.id: registerModal (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ed9447907cee2676d6417213b000931
+thg 4 15, 2025 2:24:54 CH org.example.listeners.TestListener onTestFailure
+INFO: Screenshot đã được lưu tại: test-output\screenshots\testRegisterWithExistingEmail_20250415_142453.png
+]]></system-err>
+  </testcase>
+  <testcase name="testRegisterWithEmptyFullName" classname="org.example.tests.auth.RegisterTest" time="2.194">
+    <system-err><![CDATA[thg 4 15, 2025 2:24:54 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:24:54 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRegisterWithEmptyFullName
+thg 4 15, 2025 2:24:54 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng ký với Họ và tên rỗng
+thg 4 15, 2025 2:24:56 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testRegisterWithEmptyFullName đã PASS
+thg 4 15, 2025 2:24:56 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2192 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testRegisterWithEmptyEmail" classname="org.example.tests.auth.RegisterTest" time="2.147">
+    <system-err><![CDATA[thg 4 15, 2025 2:24:57 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:24:57 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRegisterWithEmptyEmail
+thg 4 15, 2025 2:24:57 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng ký với email rỗng
+thg 4 15, 2025 2:24:59 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testRegisterWithEmptyEmail đã PASS
+thg 4 15, 2025 2:24:59 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2145 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testRegisterWithShortPassword" classname="org.example.tests.auth.RegisterTest" time="2.182">
+    <system-err><![CDATA[thg 4 15, 2025 2:24:59 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:24:59 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRegisterWithShortPassword
+thg 4 15, 2025 2:24:59 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng ký với mật khẩu ngắn hơn 6 ký tự
+thg 4 15, 2025 2:25:02 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testRegisterWithShortPassword đã PASS
+thg 4 15, 2025 2:25:02 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2181 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testRegisterWithPasswordMismatch" classname="org.example.tests.auth.RegisterTest" time="2.19">
+    <system-err><![CDATA[thg 4 15, 2025 2:25:02 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:02 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRegisterWithPasswordMismatch
+thg 4 15, 2025 2:25:02 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng ký với mật khẩu không khớp
+thg 4 15, 2025 2:25:04 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testRegisterWithPasswordMismatch đã PASS
+thg 4 15, 2025 2:25:04 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2189 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testRegisterWithMissingPhone" classname="org.example.tests.auth.RegisterTest" time="2.114">
+    <system-err><![CDATA[thg 4 15, 2025 2:25:05 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:05 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRegisterWithMissingPhone
+thg 4 15, 2025 2:25:05 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra đăng ký với mật khẩu không khớp
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testRegisterWithMissingPhone đã PASS
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2114 ms
+]]></system-err>
+  </testcase>
+  <testcase name="viewProfileTest" classname="org.example.tests.profile.ViewProfileTest" time="2.118">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Register Test kết thúc
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 7
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 6
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 1
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onStart
+INFO: Test Suite View Profile Test bắt đầu
+thg 4 15, 2025 2:25:07 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:08 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:25:08 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:25:12 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:12 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: viewProfileTest
+thg 4 15, 2025 2:25:12 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra hiển thị thông tin người dùng
+thg 4 15, 2025 2:25:14 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test viewProfileTest đã PASS
+thg 4 15, 2025 2:25:14 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2118 ms
+]]></system-err>
+  </testcase>
+  <testcase name="updateProfileTestSuccess" classname="org.example.tests.profile.UpdateProfileTest" time="2.987">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite View Profile Test kết thúc
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 1
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 1
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Update Profile Test bắt đầu
+thg 4 15, 2025 2:25:15 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:15 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:25:15 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:25:20 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:20 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: updateProfileTestSuccess
+thg 4 15, 2025 2:25:20 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra cập nhật thông tin người dùng
+thg 4 15, 2025 2:25:23 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test updateProfileTestSuccess đã PASS
+thg 4 15, 2025 2:25:23 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2987 ms
+]]></system-err>
+  </testcase>
+  <testcase name="updateProfileWithEmptyAddress" classname="org.example.tests.profile.UpdateProfileTest" time="2.645">
+    <system-err><![CDATA[thg 4 15, 2025 2:25:23 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:23 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: updateProfileWithEmptyAddress
+thg 4 15, 2025 2:25:23 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Địa chỉ không hợp lệ (để trống)
+thg 4 15, 2025 2:25:26 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test updateProfileWithEmptyAddress đã PASS
+thg 4 15, 2025 2:25:26 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2644 ms
+]]></system-err>
+  </testcase>
+  <testcase name="updateProfileWithEmptyFullName" classname="org.example.tests.profile.UpdateProfileTest" time="2.686">
+    <system-err><![CDATA[thg 4 15, 2025 2:25:26 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:26 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: updateProfileWithEmptyFullName
+thg 4 15, 2025 2:25:26 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Họ tên không hợp lệ (để trống)
+thg 4 15, 2025 2:25:28 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test updateProfileWithEmptyFullName đã PASS
+thg 4 15, 2025 2:25:28 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2686 ms
+]]></system-err>
+  </testcase>
+  <testcase name="updateProfileWithInvalidBirthdayFormat" classname="org.example.tests.profile.UpdateProfileTest" time="2.588">
+    <system-err><![CDATA[thg 4 15, 2025 2:25:28 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:28 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: updateProfileWithInvalidBirthdayFormat
+thg 4 15, 2025 2:25:28 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Ngày sinh không hợp lệ (định dạng sai)
+thg 4 15, 2025 2:25:31 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test updateProfileWithInvalidBirthdayFormat đã PASS
+thg 4 15, 2025 2:25:31 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2587 ms
+]]></system-err>
+  </testcase>
+  <testcase name="updateProfileWithInvalidShortPhone" classname="org.example.tests.profile.UpdateProfileTest" time="2.859">
+    <system-err><![CDATA[thg 4 15, 2025 2:25:31 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:31 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: updateProfileWithInvalidShortPhone
+thg 4 15, 2025 2:25:31 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Số điện thoại không hợp lệ (quá ngắn)
+thg 4 15, 2025 2:25:34 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test updateProfileWithInvalidShortPhone đã PASS
+thg 4 15, 2025 2:25:34 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2858 ms
+]]></system-err>
+  </testcase>
+  <testcase name="updateProfileWithNonNumericPhone" classname="org.example.tests.profile.UpdateProfileTest" time="2.963">
+    <system-err><![CDATA[thg 4 15, 2025 2:25:34 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:34 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: updateProfileWithNonNumericPhone
+thg 4 15, 2025 2:25:34 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Số điện thoại không hợp lệ (chứa ký tự)
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test updateProfileWithNonNumericPhone đã PASS
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2961 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testChangePasswordSuccess" classname="org.example.tests.ChangePass.ChangePassTest" time="3.751">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+Đổi mật khẩu thành công!
+Đổi mật khẩu thành công!
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Update Profile Test kết thúc
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 6
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 6
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Change Password Test bắt đầu
+thg 4 15, 2025 2:25:37 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:38 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:25:38 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:25:44 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:44 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testChangePasswordSuccess
+thg 4 15, 2025 2:25:44 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: 
+thg 4 15, 2025 2:25:48 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testChangePasswordSuccess đã PASS
+thg 4 15, 2025 2:25:48 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 3750 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testIncorrectOldPassword" classname="org.example.tests.ChangePass.ChangePassTest" time="0.875">
+    <system-out><![CDATA[Mật khẩu hiện tại không chính xác
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:48 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:48 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testIncorrectOldPassword
+thg 4 15, 2025 2:25:48 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: 
+thg 4 15, 2025 2:25:49 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testIncorrectOldPassword đã PASS
+thg 4 15, 2025 2:25:49 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 874 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testMissingInformation" classname="org.example.tests.ChangePass.ChangePassTest" time="0.677">
+    <system-out><![CDATA[TH1 - Thiếu mật khẩu cũ: Vui lòng điền đầy đủ thông tin
+TH2 - Thiếu mật khẩu mới: Vui lòng điền đầy đủ thông tin
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:49 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:49 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testMissingInformation
+thg 4 15, 2025 2:25:49 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: 
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testMissingInformation đã PASS
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 677 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testNewPasswordSameAsOld" classname="org.example.tests.ChangePass.ChangePassTest" time="0.312">
+    <system-out><![CDATA[Mật khẩu mới phải khác mật khẩu cũ
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testNewPasswordSameAsOld
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: 
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testNewPasswordSameAsOld đã PASS
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 310 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testPasswordMismatch" classname="org.example.tests.ChangePass.ChangePassTest" time="0.392">
+    <system-out><![CDATA[Mật khẩu mới và xác nhận mật khẩu không khớp
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testPasswordMismatch
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: 
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testPasswordMismatch đã PASS
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 391 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testPasswordTooShort" classname="org.example.tests.ChangePass.ChangePassTest" time="0.317">
+    <system-out><![CDATA[Mật khẩu mới phải có ít nhất 6 ký tự
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testPasswordTooShort
+thg 4 15, 2025 2:25:50 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: 
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testPasswordTooShort đã PASS
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 317 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testDefaultPageDisplay" classname="org.example.tests.orders.OrdersTest" time="10.169">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Change Password Test kết thúc
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 6
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 6
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onStart
+INFO: Test Suite OrderTest Test bắt đầu
+thg 4 15, 2025 2:25:51 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:25:51 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:25:51 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:25:55 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:25:55 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testDefaultPageDisplay
+thg 4 15, 2025 2:25:55 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra hiển thị mặc định với trạng thái PENDING
+thg 4 15, 2025 2:26:05 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testDefaultPageDisplay đã PASS
+thg 4 15, 2025 2:26:05 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 10168 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testOrderFiltering" classname="org.example.tests.orders.OrdersTest" time="63.646">
+    <system-out><![CDATA[Số đơn hàng với trạng thái CONFIRMED: 1
+Số đơn hàng với trạng thái DELIVERING: 1
+Số đơn hàng với trạng thái DELIVERED: 0
+Số đơn hàng với trạng thái CANCELLED: 15
+Số đơn hàng với trạng thái PENDING: 1
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:26:05 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:26:05 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testOrderFiltering
+thg 4 15, 2025 2:26:05 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng filter đơn hàng theo trạng thái
+thg 4 15, 2025 2:27:09 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testOrderFiltering đã PASS
+thg 4 15, 2025 2:27:09 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 63646 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testViewOrderDetail" classname="org.example.tests.orders.OrdersTest" time="23.241">
+    <system-err><![CDATA[thg 4 15, 2025 2:27:09 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:27:09 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testViewOrderDetail
+thg 4 15, 2025 2:27:09 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng xem chi tiết đơn hàng
+thg 4 15, 2025 2:27:32 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testViewOrderDetail đã PASS
+thg 4 15, 2025 2:27:32 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 23241 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testSidebarNavigation" classname="org.example.tests.orders.OrdersTest" time="23.017">
+    <system-err><![CDATA[thg 4 15, 2025 2:27:32 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:27:32 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testSidebarNavigation
+thg 4 15, 2025 2:27:32 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng điều hướng từ sidebar
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testSidebarNavigation đã PASS
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 23017 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testOrderDetailDisplay" classname="org.example.tests.orders.OrderDetailTest" time="0.564">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+Sử dụng đơn hàng ID: 22 cho các test
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite OrderTest Test kết thúc
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 4
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 4
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Order Detail Test bắt đầu
+thg 4 15, 2025 2:27:55 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:27:56 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:27:56 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:28:09 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:28:09 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testOrderDetailDisplay
+thg 4 15, 2025 2:28:09 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra hiển thị chi tiết đơn hàng
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testOrderDetailDisplay đã PASS
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 563 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testCancelButtonVisibility" classname="org.example.tests.orders.OrderDetailTest" time="0.07">
+    <system-err><![CDATA[thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testCancelButtonVisibility
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra hiển thị nút hủy đơn hàng dựa vào trạng thái
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testCancelButtonVisibility đã PASS
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 69 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testCancelOrder" classname="org.example.tests.orders.OrderDetailTest" time="2.877">
+    <system-err><![CDATA[thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testCancelOrder
+thg 4 15, 2025 2:28:10 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng hủy đơn hàng
+thg 4 15, 2025 2:28:13 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testCancelOrder đã PASS
+thg 4 15, 2025 2:28:13 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2875 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testBackButtonFunction" classname="org.example.tests.orders.OrderDetailTest" time="42.41">
+    <system-err><![CDATA[thg 4 15, 2025 2:28:13 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:28:13 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testBackButtonFunction
+thg 4 15, 2025 2:28:13 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng quay lại từ chi tiết đơn hàng
+thg 4 15, 2025 2:28:55 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testBackButtonFunction đã PASS
+thg 4 15, 2025 2:28:55 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 42409 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testInvalidOrderId" classname="org.example.tests.orders.OrderDetailTest" time="2.089">
+    <system-err><![CDATA[thg 4 15, 2025 2:28:55 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:28:55 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testInvalidOrderId
+thg 4 15, 2025 2:28:55 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra xử lý lỗi khi ID đơn hàng không hợp lệ
+thg 4 15, 2025 2:28:57 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testInvalidOrderId đã PASS
+thg 4 15, 2025 2:28:57 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2089 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testSidebarNavigation" classname="org.example.tests.orders.OrderDetailTest" time="2.477">
+    <system-err><![CDATA[thg 4 15, 2025 2:28:57 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:28:57 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testSidebarNavigation
+thg 4 15, 2025 2:28:57 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng điều hướng từ sidebar
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testSidebarNavigation đã PASS
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2477 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testColorSelection" classname="org.example.tests.product.ProductSelectionTest" time="2.13">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Order Detail Test kết thúc
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 6
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 6
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Product Selection Test bắt đầu
+thg 4 15, 2025 2:29:00 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:01 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:29:01 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:29:01 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:01 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testColorSelection
+thg 4 15, 2025 2:29:01 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Chọn màu sắc sản phẩm
+thg 4 15, 2025 2:29:03 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testColorSelection đã PASS
+thg 4 15, 2025 2:29:03 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2129 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testSizeSelection" classname="org.example.tests.product.ProductSelectionTest" time="2.127">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:04 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:04 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testSizeSelection
+thg 4 15, 2025 2:29:04 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Chọn kích thước sản phẩm
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testSizeSelection đã PASS
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2126 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testProductInformationDisplay" classname="org.example.tests.product.ProductDetailTest" time="0.067">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Product Selection Test kết thúc
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 2
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 2
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Product Detail Test bắt đầu
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testProductInformationDisplay
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Hiển thị thông tin sản phẩm
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testProductInformationDisplay đã PASS
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 68 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testAddSingleProductToCartWhenLoggedIn" classname="org.example.tests.product.AddToCartTest" time="2.651">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Product Detail Test kết thúc
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 1
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 1
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Add To Cast Test bắt đầu
+thg 4 15, 2025 2:29:06 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:07 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:07 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testAddSingleProductToCartWhenLoggedIn
+thg 4 15, 2025 2:29:07 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Thêm sản phẩm vào giỏ hàng thành công khi đã đăng nhập
+thg 4 15, 2025 2:29:09 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testAddSingleProductToCartWhenLoggedIn đã PASS
+thg 4 15, 2025 2:29:09 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2650 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testIncreaseQuantityButton" classname="org.example.tests.product.AddToCartTest" time="2.3">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:09 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:09 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testIncreaseQuantityButton
+thg 4 15, 2025 2:29:09 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra nút tăng số lượng sản phẩm
+thg 4 15, 2025 2:29:12 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testIncreaseQuantityButton đã PASS
+thg 4 15, 2025 2:29:12 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2299 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testDecreaseQuantityButton" classname="org.example.tests.product.AddToCartTest" time="2.322">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:12 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:12 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testDecreaseQuantityButton
+thg 4 15, 2025 2:29:12 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra nút giảm số lượng sản phẩm
+thg 4 15, 2025 2:29:14 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testDecreaseQuantityButton đã PASS
+thg 4 15, 2025 2:29:14 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2321 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testMinimumQuantityLimit" classname="org.example.tests.product.AddToCartTest" time="2.311">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:14 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:14 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testMinimumQuantityLimit
+thg 4 15, 2025 2:29:14 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra giới hạn số lượng tối thiểu là 1
+thg 4 15, 2025 2:29:16 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testMinimumQuantityLimit đã PASS
+thg 4 15, 2025 2:29:16 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2311 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testMaximumQuantityLimit" classname="org.example.tests.product.AddToCartTest" time="3.764">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:16 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:16 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testMaximumQuantityLimit
+thg 4 15, 2025 2:29:16 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra giới hạn số lượng tối đa
+thg 4 15, 2025 2:29:20 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testMaximumQuantityLimit đã PASS
+thg 4 15, 2025 2:29:20 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 3763 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testAddSingleProductToCartWhenNotLoggedIn" classname="org.example.tests.product.AddToCartTest" time="2.232">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:29:20 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:20 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testAddSingleProductToCartWhenNotLoggedIn
+thg 4 15, 2025 2:29:20 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Thêm sản phẩm vào giỏ hàng thất bại khi chưa đăng nhập
+thg 4 15, 2025 2:29:21 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:29:21 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testAddSingleProductToCartWhenNotLoggedIn đã PASS
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 2231 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testBuyNowWhenLoggedIn" classname="org.example.tests.product.BuyNowTest" time="1.927">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Add To Cast Test kết thúc
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 6
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 6
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Buy Now Test bắt đầu
+thg 4 15, 2025 2:29:22 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:23 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:29:23 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:29:24 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:24 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testBuyNowWhenLoggedIn
+thg 4 15, 2025 2:29:24 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Nhấn mua sản phẩm thành công khi đã đăng nhập
+thg 4 15, 2025 2:29:26 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testBuyNowWhenLoggedIn đã PASS
+thg 4 15, 2025 2:29:26 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 1926 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testBuyNowWhenNotLoggedIn" classname="org.example.tests.product.BuyNowTest" time="0.27">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:26 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:26 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testBuyNowWhenNotLoggedIn
+thg 4 15, 2025 2:29:26 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Nhấn mua sản phẩm thất bại khi chưa đăng nhập
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testBuyNowWhenNotLoggedIn đã PASS
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 269 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testCartPageDisplay" classname="org.example.tests.cart.ViewCartTest" time="10.111">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Buy Now Test kết thúc
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 2
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 2
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onStart
+INFO: Test Suite View Cart Test bắt đầu
+thg 4 15, 2025 2:29:27 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:27 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:29:27 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:29:31 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:31 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testCartPageDisplay
+thg 4 15, 2025 2:29:31 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra hiển thị giỏ hàng
+thg 4 15, 2025 2:29:41 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testCartPageDisplay đã PASS
+thg 4 15, 2025 2:29:41 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 10110 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testSelectAllItems" classname="org.example.tests.cart.ViewCartTest" time="10.214">
+    <system-err><![CDATA[thg 4 15, 2025 2:29:41 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:41 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testSelectAllItems
+thg 4 15, 2025 2:29:41 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng chọn tất cả sản phẩm
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testSelectAllItems đã PASS
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 10214 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testDecreaseQuantity" classname="org.example.tests.cart.CartQuantityTest" time="21.948">
+    <failure message="Expected condition failed: waiting for condition to not be valid: text (&apos;31.600 ₫&apos;) to be present in element found by By.id: total (tried for 10 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;&#10;System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64913}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64913/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6de524cd3e0aa7353fa3217342a7c4d2" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for condition to not be valid: text ('31.600 ₫') to be present in element found by By.id: total (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64913}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64913/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6de524cd3e0aa7353fa3217342a7c4d2
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at org.example.pages.CartPage.decreaseQuantity(CartPage.java:149)
+	at org.example.tests.cart.CartQuantityTest.testDecreaseQuantity(CartQuantityTest.java:86)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite View Cart Test kết thúc
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 2
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 2
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Cart Quantity Test bắt đầu
+thg 4 15, 2025 2:29:51 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:29:52 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:29:52 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:29:56 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:29:56 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testDecreaseQuantity
+thg 4 15, 2025 2:29:56 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng giảm số lượng sản phẩm
+thg 4 15, 2025 2:30:17 CH org.example.listeners.TestListener onTestFailure
+SEVERE: Test testDecreaseQuantity đã FAIL
+thg 4 15, 2025 2:30:17 CH org.example.listeners.TestListener onTestFailure
+SEVERE: Lỗi: Expected condition failed: waiting for condition to not be valid: text ('31.600 ₫') to be present in element found by By.id: total (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64913}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64913/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6de524cd3e0aa7353fa3217342a7c4d2
+thg 4 15, 2025 2:30:17 CH org.example.listeners.TestListener onTestFailure
+INFO: Screenshot đã được lưu tại: test-output\screenshots\testDecreaseQuantity_20250415_143017.png
+]]></system-err>
+  </testcase>
+  <testcase name="testIncreaseQuantity" classname="org.example.tests.cart.CartQuantityTest" time="12.708">
+    <system-err><![CDATA[thg 4 15, 2025 2:30:17 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:30:17 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testIncreaseQuantity
+thg 4 15, 2025 2:30:17 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng tăng số lượng sản phẩm
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testIncreaseQuantity đã PASS
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 12707 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testContinueShopping" classname="org.example.tests.cart.ProceedToCheckoutTest" time="10.049">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Cart Quantity Test kết thúc
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 2
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 1
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 1
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Cart Test bắt đầu
+thg 4 15, 2025 2:30:30 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:30:31 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:30:31 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:30:34 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:30:34 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testContinueShopping
+thg 4 15, 2025 2:30:34 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng tiếp tục mua sắm khi giỏ hàng trống
+thg 4 15, 2025 2:30:45 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testContinueShopping đã PASS
+thg 4 15, 2025 2:30:45 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 10048 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testProceedToCheckout" classname="org.example.tests.cart.ProceedToCheckoutTest" time="12.298">
+    <system-err><![CDATA[thg 4 15, 2025 2:30:45 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:30:45 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testProceedToCheckout
+thg 4 15, 2025 2:30:45 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng tiến hành thanh toán với giỏ hàng có sản phẩm
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testProceedToCheckout đã PASS
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 12297 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testRemoveCartItem" classname="org.example.tests.cart.RemoveCartItemTest" time="11.686">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Cart Test kết thúc
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 2
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 2
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Remove Cart Item Test bắt đầu
+thg 4 15, 2025 2:30:57 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:30:58 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:30:58 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:31:01 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:31:01 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRemoveCartItem
+thg 4 15, 2025 2:31:01 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng xóa sản phẩm khỏi giỏ hàng
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testRemoveCartItem đã PASS
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 11685 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testOrderInformationDisplay" classname="org.example.tests.checkout.CheckoutTest" time="0.061">
+    <system-out><![CDATA[Driver session expired, reinitializing...
+]]></system-out>
+    <system-err><![CDATA[thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onFinish
+INFO: Test Suite Remove Cart Item Test kết thúc
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onFinish
+INFO: Total tests run: 1
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onFinish
+INFO: Passed tests: 1
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onFinish
+INFO: Failed tests: 0
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onFinish
+INFO: Skipped tests: 0
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onFinish
+INFO: ===============================================================
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onStart
+INFO: Test Suite Check Out Test  bắt đầu
+thg 4 15, 2025 2:31:13 CH org.example.listeners.TestListener onStart
+INFO: ===============================================================
+thg 4 15, 2025 2:31:14 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 135
+thg 4 15, 2025 2:31:14 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 135.0.7049.85. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testOrderInformationDisplay
+thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra hiển thị thông tin đơn hàng trên trang checkout
+thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testOrderInformationDisplay đã PASS
+thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 60 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testRequiredFieldValidation" classname="org.example.tests.checkout.CheckoutTest" time="1.293">
+    <system-err><![CDATA[thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testRequiredFieldValidation
+thg 4 15, 2025 2:31:28 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra hiển thị lỗi khi không nhập thông tin bắt buộc
+thg 4 15, 2025 2:31:29 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testRequiredFieldValidation đã PASS
+thg 4 15, 2025 2:31:29 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 1293 ms
+]]></system-err>
+  </testcase>
+  <testcase name="testSuccessfulOrderPlacement" classname="org.example.tests.checkout.CheckoutTest" time="3.401">
+    <system-err><![CDATA[thg 4 15, 2025 2:31:29 CH org.example.listeners.TestListener onTestStart
+INFO: ---------------
+thg 4 15, 2025 2:31:29 CH org.example.listeners.TestListener onTestStart
+INFO: Đang chạy test: testSuccessfulOrderPlacement
+thg 4 15, 2025 2:31:29 CH org.example.listeners.TestListener onTestStart
+INFO: Mô tả: Kiểm tra chức năng đặt hàng thành công
+thg 4 15, 2025 2:31:33 CH org.example.listeners.TestListener onTestSuccess
+INFO: Test testSuccessfulOrderPlacement đã PASS
+thg 4 15, 2025 2:31:33 CH org.example.listeners.TestListener onTestSuccess
+INFO: Thời gian chạy: 3402 ms
+]]></system-err>
+  </testcase>
+</testsuite>

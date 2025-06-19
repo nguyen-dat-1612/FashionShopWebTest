@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Fashion Style Website Test Suite">
+    <listeners>
+        <listener class-name="org.example.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="org.example.tests.auth.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Register Test">
+        <classes>
+            <class name="org.example.tests.auth.RegisterTest"/>
+        </classes>
+    </test>
+    <test name="View Profile Test">
+        <classes>
+            <class name="org.example.tests.profile.ViewProfileTest"/>
+        </classes>
+    </test>
+
+    <test name="Update Profile Test">
+        <classes>
+            <class name="org.example.tests.profile.UpdateProfileTest"/>
+        </classes>
+    </test>
+
+    <test name="Change Password Test">
+        <classes>
+            <class name="org.example.tests.ChangePass.ChangePassTest"/>
+        </classes>
+    </test>
+
+    <test name="OrderTest Test">
+        <classes>
+            <class name="org.example.tests.orders.OrdersTest"/>
+        </classes>
+    </test>
+
+    <test name="Order Detail Test">
+        <classes>
+            <class name="org.example.tests.orders.OrderDetailTest"/>
+        </classes>
+    </test>
+
+
+    <test name="Product Selection Test">
+        <classes>
+            <class name="org.example.tests.product.ProductSelectionTest"/>
+        </classes>
+    </test>
+
+    <test name="Product Detail Test">
+        <classes>
+            <class name="org.example.tests.product.ProductDetailTest"/>
+        </classes>
+    </test>
+
+    <test name="Add To Cast Test">
+        <classes>
+            <class name="org.example.tests.product.AddToCartTest"/>
+        </classes>
+    </test>
+    
+    <test name="Buy Now Test">
+        <classes>
+            <class name="org.example.tests.product.BuyNowTest"/>
+        </classes>
+    </test>
+
+    <test name="View Cart Test">
+        <classes>
+            <class name="org.example.tests.cart.ViewCartTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Quantity Test">
+        <classes>
+            <class name="org.example.tests.cart.CartQuantityTest"/>
+        </classes>
+    </test>
+
+    <test name="Cart Test">
+        <classes>
+            <class name="org.example.tests.cart.ProceedToCheckoutTest"/>
+        </classes>
+    </test>
+
+    <test name="Remove Cart Item Test">
+        <classes>
+            <class name="org.example.tests.cart.RemoveCartItemTest"/>
+        </classes>
+    </test>
+
+    <test name="Check Out Test ">
+        <classes>
+            <class name="org.example.tests.checkout.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>

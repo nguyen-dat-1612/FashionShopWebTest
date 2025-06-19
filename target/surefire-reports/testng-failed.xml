@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Fashion Style Website Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.example.listeners.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="Register Test(failed)" verbose="0">
+    <classes>
+      <class name="org.example.tests.auth.RegisterTest">
+        <methods>
+          <include name="testRegisterWithExistingEmail"/>
+          <include name="navigateToHomePage"/>
+          <include name="beforeSuite"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- org.example.tests.auth.RegisterTest -->
+    </classes>
+  </test> <!-- Register Test(failed) -->
+  <test thread-count="5" name="Cart Quantity Test(failed)" verbose="0">
+    <classes>
+      <class name="org.example.tests.cart.CartQuantityTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="testDecreaseQuantity"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- org.example.tests.cart.CartQuantityTest -->
+    </classes>
+  </test> <!-- Cart Quantity Test(failed) -->
+</suite> <!-- Failed suite [Fashion Style Website Test Suite] -->

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="53" passed="51" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-15T14:24:27 GMT+07:00" name="Fashion Style Website Test Suite" finished-at="2025-04-15T14:31:33 GMT+07:00" duration-ms="425643">
+    <groups>
+    </groups>
+    <test started-at="2025-04-15T14:24:27 GMT+07:00" name="Login Tests" finished-at="2025-04-15T14:24:37 GMT+07:00" duration-ms="9732">
+      <class name="org.example.tests.auth.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.auth.LoginTest@4218d6a3]" started-at="2025-04-15T14:24:27 GMT+07:00" name="setUp" finished-at="2025-04-15T14:24:27 GMT+07:00" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.LoginTest@4218d6a3]" started-at="2025-04-15T14:24:27 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:24:30 GMT+07:00" duration-ms="2386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testSuccessfulLogin()[pri:1, instance:org.example.tests.auth.LoginTest@4218d6a3]" started-at="2025-04-15T14:24:30 GMT+07:00" name="testSuccessfulLogin" description="Kiểm tra đăng nhập thành công" finished-at="2025-04-15T14:24:32 GMT+07:00" duration-ms="1897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.LoginTest@4218d6a3]" started-at="2025-04-15T14:24:32 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:24:34 GMT+07:00" duration-ms="2609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testUnSuccessfulLogin()[pri:2, instance:org.example.tests.auth.LoginTest@4218d6a3]" started-at="2025-04-15T14:24:34 GMT+07:00" name="testUnSuccessfulLogin" description="Kiểm tra đăng nhập không thành công thành công" finished-at="2025-04-15T14:24:37 GMT+07:00" duration-ms="2616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUnSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.auth.LoginTest@4218d6a3]" started-at="2025-04-15T14:24:37 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:24:37 GMT+07:00" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.auth.LoginTest -->
+    </test> <!-- Login Tests -->
+    <test started-at="2025-04-15T14:24:37 GMT+07:00" name="Register Test" finished-at="2025-04-15T14:25:07 GMT+07:00" duration-ms="29910">
+      <class name="org.example.tests.auth.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:37 GMT+07:00" name="setUp" finished-at="2025-04-15T14:24:38 GMT+07:00" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:38 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:24:39 GMT+07:00" duration-ms="1376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testSuccessfulRegistration()[pri:1, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:39 GMT+07:00" name="testSuccessfulRegistration" description="Kiểm tra đăng ký tài khoản mới thành công" finished-at="2025-04-15T14:24:42 GMT+07:00" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulRegistration -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:42 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:24:42 GMT+07:00" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testRegisterWithExistingEmail()[pri:2, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:42 GMT+07:00" name="testRegisterWithExistingEmail" description="Kiểm tra đăng ký với email đã tồn tại" finished-at="2025-04-15T14:24:53 GMT+07:00" duration-ms="10211" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: registerModal (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ed9447907cee2676d6417213b000931]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: registerModal (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ed9447907cee2676d6417213b000931
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at org.example.pages.HeaderComponent.fillRegisterForm(HeaderComponent.java:72)
+at org.example.tests.auth.RegisterTest.testRegisterWithExistingEmail(RegisterTest.java:71)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithExistingEmail -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:54 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:24:54 GMT+07:00" duration-ms="444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testRegisterWithEmptyFullName()[pri:3, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:54 GMT+07:00" name="testRegisterWithEmptyFullName" description="Kiểm tra đăng ký với Họ và tên rỗng" finished-at="2025-04-15T14:24:56 GMT+07:00" duration-ms="2192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithEmptyFullName -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:56 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:24:57 GMT+07:00" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testRegisterWithEmptyEmail()[pri:4, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:57 GMT+07:00" name="testRegisterWithEmptyEmail" description="Kiểm tra đăng ký với email rỗng" finished-at="2025-04-15T14:24:59 GMT+07:00" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithEmptyEmail -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:59 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:24:59 GMT+07:00" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testRegisterWithShortPassword()[pri:5, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:24:59 GMT+07:00" name="testRegisterWithShortPassword" description="Kiểm tra đăng ký với mật khẩu ngắn hơn 6 ký tự" finished-at="2025-04-15T14:25:02 GMT+07:00" duration-ms="2181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithShortPassword -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:25:02 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:25:02 GMT+07:00" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testRegisterWithPasswordMismatch()[pri:6, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:25:02 GMT+07:00" name="testRegisterWithPasswordMismatch" description="Kiểm tra đăng ký với mật khẩu không khớp" finished-at="2025-04-15T14:25:04 GMT+07:00" duration-ms="2189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithPasswordMismatch -->
+        <test-method is-config="true" signature="navigateToHomePage()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:25:04 GMT+07:00" name="navigateToHomePage" finished-at="2025-04-15T14:25:05 GMT+07:00" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToHomePage -->
+        <test-method signature="testRegisterWithMissingPhone()[pri:7, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:25:05 GMT+07:00" name="testRegisterWithMissingPhone" description="Kiểm tra đăng ký với mật khẩu không khớp" finished-at="2025-04-15T14:25:07 GMT+07:00" duration-ms="2114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegisterWithMissingPhone -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.auth.RegisterTest@6150c3ec]" started-at="2025-04-15T14:25:07 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:25:07 GMT+07:00" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.auth.RegisterTest -->
+    </test> <!-- Register Test -->
+    <test started-at="2025-04-15T14:25:07 GMT+07:00" name="View Profile Test" finished-at="2025-04-15T14:25:15 GMT+07:00" duration-ms="7655">
+      <class name="org.example.tests.profile.ViewProfileTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.profile.ViewProfileTest@1f2586d6]" started-at="2025-04-15T14:25:07 GMT+07:00" name="setUp" finished-at="2025-04-15T14:25:08 GMT+07:00" duration-ms="691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToProfilePage()[pri:0, instance:org.example.tests.profile.ViewProfileTest@1f2586d6]" started-at="2025-04-15T14:25:08 GMT+07:00" name="navigateToProfilePage" finished-at="2025-04-15T14:25:12 GMT+07:00" duration-ms="4652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToProfilePage -->
+        <test-method signature="viewProfileTest()[pri:0, instance:org.example.tests.profile.ViewProfileTest@1f2586d6]" started-at="2025-04-15T14:25:12 GMT+07:00" name="viewProfileTest" description="Kiểm tra hiển thị thông tin người dùng" finished-at="2025-04-15T14:25:14 GMT+07:00" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProfileTest -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.example.tests.profile.ViewProfileTest@1f2586d6]" started-at="2025-04-15T14:25:14 GMT+07:00" name="tearDownClass" finished-at="2025-04-15T14:25:15 GMT+07:00" duration-ms="192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.tests.profile.ViewProfileTest -->
+    </test> <!-- View Profile Test -->
+    <test started-at="2025-04-15T14:25:15 GMT+07:00" name="Update Profile Test" finished-at="2025-04-15T14:25:37 GMT+07:00" duration-ms="22249">
+      <class name="org.example.tests.profile.UpdateProfileTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:15 GMT+07:00" name="setUp" finished-at="2025-04-15T14:25:20 GMT+07:00" duration-ms="5306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="updateProfileTestSuccess()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:20 GMT+07:00" name="updateProfileTestSuccess" description="Kiểm tra cập nhật thông tin người dùng" finished-at="2025-04-15T14:25:23 GMT+07:00" duration-ms="2987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfileTestSuccess -->
+        <test-method signature="updateProfileWithEmptyAddress()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:23 GMT+07:00" name="updateProfileWithEmptyAddress" description="Địa chỉ không hợp lệ (để trống)" finished-at="2025-04-15T14:25:26 GMT+07:00" duration-ms="2644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfileWithEmptyAddress -->
+        <test-method signature="updateProfileWithEmptyFullName()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:26 GMT+07:00" name="updateProfileWithEmptyFullName" description="Họ tên không hợp lệ (để trống)" finished-at="2025-04-15T14:25:28 GMT+07:00" duration-ms="2686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfileWithEmptyFullName -->
+        <test-method signature="updateProfileWithInvalidBirthdayFormat()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:28 GMT+07:00" name="updateProfileWithInvalidBirthdayFormat" description="Ngày sinh không hợp lệ (định dạng sai)" finished-at="2025-04-15T14:25:31 GMT+07:00" duration-ms="2587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfileWithInvalidBirthdayFormat -->
+        <test-method signature="updateProfileWithInvalidShortPhone()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:31 GMT+07:00" name="updateProfileWithInvalidShortPhone" description="Số điện thoại không hợp lệ (quá ngắn)" finished-at="2025-04-15T14:25:34 GMT+07:00" duration-ms="2858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfileWithInvalidShortPhone -->
+        <test-method signature="updateProfileWithNonNumericPhone()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:34 GMT+07:00" name="updateProfileWithNonNumericPhone" description="Số điện thoại không hợp lệ (chứa ký tự)" finished-at="2025-04-15T14:25:37 GMT+07:00" duration-ms="2961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProfileWithNonNumericPhone -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.example.tests.profile.UpdateProfileTest@229f66ed]" started-at="2025-04-15T14:25:37 GMT+07:00" name="tearDownClass" finished-at="2025-04-15T14:25:37 GMT+07:00" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.tests.profile.UpdateProfileTest -->
+    </test> <!-- Update Profile Test -->
+    <test started-at="2025-04-15T14:25:37 GMT+07:00" name="Change Password Test" finished-at="2025-04-15T14:25:51 GMT+07:00" duration-ms="13932">
+      <class name="org.example.tests.ChangePass.ChangePassTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:37 GMT+07:00" name="setUp" finished-at="2025-04-15T14:25:44 GMT+07:00" duration-ms="7439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testChangePasswordSuccess()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:44 GMT+07:00" name="testChangePasswordSuccess" finished-at="2025-04-15T14:25:48 GMT+07:00" duration-ms="3750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChangePasswordSuccess -->
+        <test-method signature="testIncorrectOldPassword()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:48 GMT+07:00" name="testIncorrectOldPassword" finished-at="2025-04-15T14:25:49 GMT+07:00" duration-ms="874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIncorrectOldPassword -->
+        <test-method signature="testMissingInformation()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:49 GMT+07:00" name="testMissingInformation" finished-at="2025-04-15T14:25:50 GMT+07:00" duration-ms="677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingInformation -->
+        <test-method signature="testNewPasswordSameAsOld()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:50 GMT+07:00" name="testNewPasswordSameAsOld" finished-at="2025-04-15T14:25:50 GMT+07:00" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNewPasswordSameAsOld -->
+        <test-method signature="testPasswordMismatch()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:50 GMT+07:00" name="testPasswordMismatch" finished-at="2025-04-15T14:25:50 GMT+07:00" duration-ms="391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordMismatch -->
+        <test-method signature="testPasswordTooShort()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:50 GMT+07:00" name="testPasswordTooShort" finished-at="2025-04-15T14:25:51 GMT+07:00" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPasswordTooShort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.ChangePass.ChangePassTest@1fa121e2]" started-at="2025-04-15T14:25:51 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:25:51 GMT+07:00" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.ChangePass.ChangePassTest -->
+    </test> <!-- Change Password Test -->
+    <test started-at="2025-04-15T14:25:51 GMT+07:00" name="OrderTest Test" finished-at="2025-04-15T14:27:55 GMT+07:00" duration-ms="124342">
+      <class name="org.example.tests.orders.OrdersTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.orders.OrdersTest@489115ef]" started-at="2025-04-15T14:25:51 GMT+07:00" name="setUp" finished-at="2025-04-15T14:25:55 GMT+07:00" duration-ms="4075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDefaultPageDisplay()[pri:1, instance:org.example.tests.orders.OrdersTest@489115ef]" started-at="2025-04-15T14:25:55 GMT+07:00" name="testDefaultPageDisplay" description="Kiểm tra hiển thị mặc định với trạng thái PENDING" finished-at="2025-04-15T14:26:05 GMT+07:00" duration-ms="10168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDefaultPageDisplay -->
+        <test-method signature="testOrderFiltering()[pri:2, instance:org.example.tests.orders.OrdersTest@489115ef]" started-at="2025-04-15T14:26:05 GMT+07:00" name="testOrderFiltering" description="Kiểm tra chức năng filter đơn hàng theo trạng thái" finished-at="2025-04-15T14:27:09 GMT+07:00" duration-ms="63646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderFiltering -->
+        <test-method signature="testViewOrderDetail()[pri:3, instance:org.example.tests.orders.OrdersTest@489115ef]" started-at="2025-04-15T14:27:09 GMT+07:00" name="testViewOrderDetail" description="Kiểm tra chức năng xem chi tiết đơn hàng" finished-at="2025-04-15T14:27:32 GMT+07:00" duration-ms="23241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewOrderDetail -->
+        <test-method signature="testSidebarNavigation()[pri:4, instance:org.example.tests.orders.OrdersTest@489115ef]" started-at="2025-04-15T14:27:32 GMT+07:00" name="testSidebarNavigation" description="Kiểm tra chức năng điều hướng từ sidebar" finished-at="2025-04-15T14:27:55 GMT+07:00" duration-ms="23017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSidebarNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.orders.OrdersTest@489115ef]" started-at="2025-04-15T14:27:55 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:27:55 GMT+07:00" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.orders.OrdersTest -->
+    </test> <!-- OrderTest Test -->
+    <test started-at="2025-04-15T14:27:55 GMT+07:00" name="Order Detail Test" finished-at="2025-04-15T14:29:00 GMT+07:00" duration-ms="64749">
+      <class name="org.example.tests.orders.OrderDetailTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:27:55 GMT+07:00" name="setUp" finished-at="2025-04-15T14:28:09 GMT+07:00" duration-ms="14054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrderDetailDisplay()[pri:1, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:28:09 GMT+07:00" name="testOrderDetailDisplay" description="Kiểm tra hiển thị chi tiết đơn hàng" finished-at="2025-04-15T14:28:10 GMT+07:00" duration-ms="563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderDetailDisplay -->
+        <test-method signature="testCancelButtonVisibility()[pri:2, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:28:10 GMT+07:00" name="testCancelButtonVisibility" description="Kiểm tra hiển thị nút hủy đơn hàng dựa vào trạng thái" finished-at="2025-04-15T14:28:10 GMT+07:00" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelButtonVisibility -->
+        <test-method signature="testCancelOrder()[pri:3, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:28:10 GMT+07:00" name="testCancelOrder" description="Kiểm tra chức năng hủy đơn hàng" finished-at="2025-04-15T14:28:13 GMT+07:00" duration-ms="2875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCancelOrder -->
+        <test-method signature="testBackButtonFunction()[pri:4, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:28:13 GMT+07:00" name="testBackButtonFunction" description="Kiểm tra chức năng quay lại từ chi tiết đơn hàng" finished-at="2025-04-15T14:28:55 GMT+07:00" duration-ms="42409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBackButtonFunction -->
+        <test-method signature="testInvalidOrderId()[pri:5, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:28:55 GMT+07:00" name="testInvalidOrderId" description="Kiểm tra xử lý lỗi khi ID đơn hàng không hợp lệ" finished-at="2025-04-15T14:28:57 GMT+07:00" duration-ms="2089" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidOrderId -->
+        <test-method signature="testSidebarNavigation()[pri:6, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:28:57 GMT+07:00" name="testSidebarNavigation" description="Kiểm tra chức năng điều hướng từ sidebar" finished-at="2025-04-15T14:29:00 GMT+07:00" duration-ms="2477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSidebarNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.orders.OrderDetailTest@4e08711f]" started-at="2025-04-15T14:29:00 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:29:00 GMT+07:00" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.orders.OrderDetailTest -->
+    </test> <!-- Order Detail Test -->
+    <test started-at="2025-04-15T14:29:00 GMT+07:00" name="Product Selection Test" finished-at="2025-04-15T14:29:06 GMT+07:00" duration-ms="5777">
+      <class name="org.example.tests.product.ProductSelectionTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.product.ProductSelectionTest@367ffa75]" started-at="2025-04-15T14:29:00 GMT+07:00" name="setUp" finished-at="2025-04-15T14:29:01 GMT+07:00" duration-ms="655" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToProductPage()[pri:0, instance:org.example.tests.product.ProductSelectionTest@367ffa75]" started-at="2025-04-15T14:29:01 GMT+07:00" name="navigateToProductPage" finished-at="2025-04-15T14:29:01 GMT+07:00" duration-ms="795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToProductPage -->
+        <test-method signature="testColorSelection()[pri:0, instance:org.example.tests.product.ProductSelectionTest@367ffa75]" started-at="2025-04-15T14:29:01 GMT+07:00" name="testColorSelection" description="Chọn màu sắc sản phẩm" finished-at="2025-04-15T14:29:03 GMT+07:00" duration-ms="2129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testColorSelection -->
+        <test-method is-config="true" signature="navigateToProductPage()[pri:0, instance:org.example.tests.product.ProductSelectionTest@367ffa75]" started-at="2025-04-15T14:29:03 GMT+07:00" name="navigateToProductPage" finished-at="2025-04-15T14:29:04 GMT+07:00" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToProductPage -->
+        <test-method signature="testSizeSelection()[pri:0, instance:org.example.tests.product.ProductSelectionTest@367ffa75]" started-at="2025-04-15T14:29:04 GMT+07:00" name="testSizeSelection" description="Chọn kích thước sản phẩm" finished-at="2025-04-15T14:29:06 GMT+07:00" duration-ms="2126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSizeSelection -->
+      </class> <!-- org.example.tests.product.ProductSelectionTest -->
+    </test> <!-- Product Selection Test -->
+    <test started-at="2025-04-15T14:29:06 GMT+07:00" name="Product Detail Test" finished-at="2025-04-15T14:29:06 GMT+07:00" duration-ms="147">
+      <class name="org.example.tests.product.ProductDetailTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.product.ProductDetailTest@1ce24091]" started-at="2025-04-15T14:29:06 GMT+07:00" name="setUp" finished-at="2025-04-15T14:29:06 GMT+07:00" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToProductDetailPage()[pri:0, instance:org.example.tests.product.ProductDetailTest@1ce24091]" started-at="2025-04-15T14:29:06 GMT+07:00" name="navigateToProductDetailPage" finished-at="2025-04-15T14:29:06 GMT+07:00" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToProductDetailPage -->
+        <test-method signature="testProductInformationDisplay()[pri:1, instance:org.example.tests.product.ProductDetailTest@1ce24091]" started-at="2025-04-15T14:29:06 GMT+07:00" name="testProductInformationDisplay" description="Hiển thị thông tin sản phẩm" finished-at="2025-04-15T14:29:06 GMT+07:00" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductInformationDisplay -->
+      </class> <!-- org.example.tests.product.ProductDetailTest -->
+    </test> <!-- Product Detail Test -->
+    <test started-at="2025-04-15T14:29:06 GMT+07:00" name="Add To Cast Test" finished-at="2025-04-15T14:29:22 GMT+07:00" duration-ms="16595">
+      <class name="org.example.tests.product.AddToCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:06 GMT+07:00" name="setUp" finished-at="2025-04-15T14:29:07 GMT+07:00" duration-ms="851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddSingleProductToCartWhenLoggedIn()[pri:1, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:07 GMT+07:00" name="testAddSingleProductToCartWhenLoggedIn" description="Thêm sản phẩm vào giỏ hàng thành công khi đã đăng nhập" finished-at="2025-04-15T14:29:09 GMT+07:00" duration-ms="2650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddSingleProductToCartWhenLoggedIn -->
+        <test-method signature="testIncreaseQuantityButton()[pri:2, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:09 GMT+07:00" name="testIncreaseQuantityButton" description="Kiểm tra nút tăng số lượng sản phẩm" finished-at="2025-04-15T14:29:12 GMT+07:00" duration-ms="2299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIncreaseQuantityButton -->
+        <test-method signature="testDecreaseQuantityButton()[pri:3, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:12 GMT+07:00" name="testDecreaseQuantityButton" description="Kiểm tra nút giảm số lượng sản phẩm" finished-at="2025-04-15T14:29:14 GMT+07:00" duration-ms="2321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDecreaseQuantityButton -->
+        <test-method signature="testMinimumQuantityLimit()[pri:4, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:14 GMT+07:00" name="testMinimumQuantityLimit" description="Kiểm tra giới hạn số lượng tối thiểu là 1" finished-at="2025-04-15T14:29:16 GMT+07:00" duration-ms="2311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMinimumQuantityLimit -->
+        <test-method signature="testMaximumQuantityLimit()[pri:5, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:16 GMT+07:00" name="testMaximumQuantityLimit" description="Kiểm tra giới hạn số lượng tối đa" finished-at="2025-04-15T14:29:20 GMT+07:00" duration-ms="3763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMaximumQuantityLimit -->
+        <test-method signature="testAddSingleProductToCartWhenNotLoggedIn()[pri:6, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:20 GMT+07:00" name="testAddSingleProductToCartWhenNotLoggedIn" description="Thêm sản phẩm vào giỏ hàng thất bại khi chưa đăng nhập" finished-at="2025-04-15T14:29:22 GMT+07:00" duration-ms="2231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddSingleProductToCartWhenNotLoggedIn -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.example.tests.product.AddToCartTest@b3ca52e]" started-at="2025-04-15T14:29:22 GMT+07:00" name="tearDownClass" finished-at="2025-04-15T14:29:22 GMT+07:00" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.tests.product.AddToCartTest -->
+    </test> <!-- Add To Cast Test -->
+    <test started-at="2025-04-15T14:29:22 GMT+07:00" name="Buy Now Test" finished-at="2025-04-15T14:29:27 GMT+07:00" duration-ms="4247">
+      <class name="org.example.tests.product.BuyNowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.product.BuyNowTest@61322f9d]" started-at="2025-04-15T14:29:22 GMT+07:00" name="setUp" finished-at="2025-04-15T14:29:23 GMT+07:00" duration-ms="674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="navigateToProductDetailPage()[pri:0, instance:org.example.tests.product.BuyNowTest@61322f9d]" started-at="2025-04-15T14:29:23 GMT+07:00" name="navigateToProductDetailPage" finished-at="2025-04-15T14:29:24 GMT+07:00" duration-ms="1125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToProductDetailPage -->
+        <test-method signature="testBuyNowWhenLoggedIn()[pri:0, instance:org.example.tests.product.BuyNowTest@61322f9d]" started-at="2025-04-15T14:29:24 GMT+07:00" name="testBuyNowWhenLoggedIn" description="Nhấn mua sản phẩm thành công khi đã đăng nhập" finished-at="2025-04-15T14:29:26 GMT+07:00" duration-ms="1926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyNowWhenLoggedIn -->
+        <test-method is-config="true" signature="navigateToProductDetailPage()[pri:0, instance:org.example.tests.product.BuyNowTest@61322f9d]" started-at="2025-04-15T14:29:26 GMT+07:00" name="navigateToProductDetailPage" finished-at="2025-04-15T14:29:26 GMT+07:00" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToProductDetailPage -->
+        <test-method signature="testBuyNowWhenNotLoggedIn()[pri:0, instance:org.example.tests.product.BuyNowTest@61322f9d]" started-at="2025-04-15T14:29:26 GMT+07:00" name="testBuyNowWhenNotLoggedIn" description="Nhấn mua sản phẩm thất bại khi chưa đăng nhập" finished-at="2025-04-15T14:29:27 GMT+07:00" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBuyNowWhenNotLoggedIn -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:org.example.tests.product.BuyNowTest@61322f9d]" started-at="2025-04-15T14:29:27 GMT+07:00" name="tearDownClass" finished-at="2025-04-15T14:29:27 GMT+07:00" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- org.example.tests.product.BuyNowTest -->
+    </test> <!-- Buy Now Test -->
+    <test started-at="2025-04-15T14:29:27 GMT+07:00" name="View Cart Test" finished-at="2025-04-15T14:29:51 GMT+07:00" duration-ms="24662">
+      <class name="org.example.tests.cart.ViewCartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.cart.ViewCartTest@b2c9a9c]" started-at="2025-04-15T14:29:27 GMT+07:00" name="setUp" finished-at="2025-04-15T14:29:31 GMT+07:00" duration-ms="4158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartPageDisplay()[pri:0, instance:org.example.tests.cart.ViewCartTest@b2c9a9c]" started-at="2025-04-15T14:29:31 GMT+07:00" name="testCartPageDisplay" description="Kiểm tra hiển thị giỏ hàng" finished-at="2025-04-15T14:29:41 GMT+07:00" duration-ms="10110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartPageDisplay -->
+        <test-method signature="testSelectAllItems()[pri:0, instance:org.example.tests.cart.ViewCartTest@b2c9a9c]" started-at="2025-04-15T14:29:41 GMT+07:00" name="testSelectAllItems" description="Kiểm tra chức năng chọn tất cả sản phẩm" finished-at="2025-04-15T14:29:51 GMT+07:00" duration-ms="10214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSelectAllItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.cart.ViewCartTest@b2c9a9c]" started-at="2025-04-15T14:29:51 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:29:51 GMT+07:00" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.cart.ViewCartTest -->
+    </test> <!-- View Cart Test -->
+    <test started-at="2025-04-15T14:29:51 GMT+07:00" name="Cart Quantity Test" finished-at="2025-04-15T14:30:30 GMT+07:00" duration-ms="39025">
+      <class name="org.example.tests.cart.CartQuantityTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.cart.CartQuantityTest@d35dea7]" started-at="2025-04-15T14:29:51 GMT+07:00" name="setUp" finished-at="2025-04-15T14:29:56 GMT+07:00" duration-ms="4179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDecreaseQuantity()[pri:0, instance:org.example.tests.cart.CartQuantityTest@d35dea7]" started-at="2025-04-15T14:29:56 GMT+07:00" name="testDecreaseQuantity" description="Kiểm tra chức năng giảm số lượng sản phẩm" finished-at="2025-04-15T14:30:17 GMT+07:00" duration-ms="21856" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for condition to not be valid: text ('31.600 ₫') to be present in element found by By.id: total (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64913}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64913/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6de524cd3e0aa7353fa3217342a7c4d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for condition to not be valid: text ('31.600 ₫') to be present in element found by By.id: total (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\nguye\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64913}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64913/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6de524cd3e0aa7353fa3217342a7c4d2
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at org.example.pages.CartPage.decreaseQuantity(CartPage.java:149)
+at org.example.tests.cart.CartQuantityTest.testDecreaseQuantity(CartQuantityTest.java:86)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDecreaseQuantity -->
+        <test-method signature="testIncreaseQuantity()[pri:0, instance:org.example.tests.cart.CartQuantityTest@d35dea7]" started-at="2025-04-15T14:30:17 GMT+07:00" name="testIncreaseQuantity" description="Kiểm tra chức năng tăng số lượng sản phẩm" finished-at="2025-04-15T14:30:30 GMT+07:00" duration-ms="12707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIncreaseQuantity -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.cart.CartQuantityTest@d35dea7]" started-at="2025-04-15T14:30:30 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:30:30 GMT+07:00" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.cart.CartQuantityTest -->
+    </test> <!-- Cart Quantity Test -->
+    <test started-at="2025-04-15T14:30:30 GMT+07:00" name="Cart Test" finished-at="2025-04-15T14:30:57 GMT+07:00" duration-ms="26658">
+      <class name="org.example.tests.cart.ProceedToCheckoutTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.cart.ProceedToCheckoutTest@41a2befb]" started-at="2025-04-15T14:30:30 GMT+07:00" name="setUp" finished-at="2025-04-15T14:30:34 GMT+07:00" duration-ms="4102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testContinueShopping()[pri:0, instance:org.example.tests.cart.ProceedToCheckoutTest@41a2befb]" started-at="2025-04-15T14:30:34 GMT+07:00" name="testContinueShopping" description="Kiểm tra chức năng tiếp tục mua sắm khi giỏ hàng trống" finished-at="2025-04-15T14:30:45 GMT+07:00" duration-ms="10048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContinueShopping -->
+        <test-method signature="testProceedToCheckout()[pri:0, instance:org.example.tests.cart.ProceedToCheckoutTest@41a2befb]" started-at="2025-04-15T14:30:45 GMT+07:00" name="testProceedToCheckout" description="Kiểm tra chức năng tiến hành thanh toán với giỏ hàng có sản phẩm" finished-at="2025-04-15T14:30:57 GMT+07:00" duration-ms="12297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProceedToCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.cart.ProceedToCheckoutTest@41a2befb]" started-at="2025-04-15T14:30:57 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:30:57 GMT+07:00" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.cart.ProceedToCheckoutTest -->
+    </test> <!-- Cart Test -->
+    <test started-at="2025-04-15T14:30:57 GMT+07:00" name="Remove Cart Item Test" finished-at="2025-04-15T14:31:13 GMT+07:00" duration-ms="16109">
+      <class name="org.example.tests.cart.RemoveCartItemTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.cart.RemoveCartItemTest@38afe297]" started-at="2025-04-15T14:30:57 GMT+07:00" name="setUp" finished-at="2025-04-15T14:31:01 GMT+07:00" duration-ms="4231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemoveCartItem()[pri:0, instance:org.example.tests.cart.RemoveCartItemTest@38afe297]" started-at="2025-04-15T14:31:01 GMT+07:00" name="testRemoveCartItem" description="Kiểm tra chức năng xóa sản phẩm khỏi giỏ hàng" finished-at="2025-04-15T14:31:13 GMT+07:00" duration-ms="11685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveCartItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.cart.RemoveCartItemTest@38afe297]" started-at="2025-04-15T14:31:13 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:31:13 GMT+07:00" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.example.tests.cart.RemoveCartItemTest -->
+    </test> <!-- Remove Cart Item Test -->
+    <test started-at="2025-04-15T14:31:13 GMT+07:00" name="Check Out Test " finished-at="2025-04-15T14:31:33 GMT+07:00" duration-ms="19763">
+      <class name="org.example.tests.checkout.CheckoutTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:org.example.tests.checkout.CheckoutTest@6200f9cb]" started-at="2025-04-15T14:24:26 GMT+07:00" name="beforeSuite" finished-at="2025-04-15T14:24:27 GMT+07:00" duration-ms="1456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:org.example.tests.checkout.CheckoutTest@6200f9cb]" started-at="2025-04-15T14:31:13 GMT+07:00" name="setUp" finished-at="2025-04-15T14:31:28 GMT+07:00" duration-ms="14785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOrderInformationDisplay()[pri:1, instance:org.example.tests.checkout.CheckoutTest@6200f9cb]" started-at="2025-04-15T14:31:28 GMT+07:00" name="testOrderInformationDisplay" description="Kiểm tra hiển thị thông tin đơn hàng trên trang checkout" finished-at="2025-04-15T14:31:28 GMT+07:00" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrderInformationDisplay -->
+        <test-method signature="testRequiredFieldValidation()[pri:2, instance:org.example.tests.checkout.CheckoutTest@6200f9cb]" started-at="2025-04-15T14:31:28 GMT+07:00" name="testRequiredFieldValidation" description="Kiểm tra hiển thị lỗi khi không nhập thông tin bắt buộc" finished-at="2025-04-15T14:31:29 GMT+07:00" duration-ms="1293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequiredFieldValidation -->
+        <test-method signature="testSuccessfulOrderPlacement()[pri:3, instance:org.example.tests.checkout.CheckoutTest@6200f9cb]" started-at="2025-04-15T14:31:29 GMT+07:00" name="testSuccessfulOrderPlacement" description="Kiểm tra chức năng đặt hàng thành công" finished-at="2025-04-15T14:31:33 GMT+07:00" duration-ms="3402" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulOrderPlacement -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.example.tests.checkout.CheckoutTest@6200f9cb]" started-at="2025-04-15T14:31:33 GMT+07:00" name="tearDown" finished-at="2025-04-15T14:31:33 GMT+07:00" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:org.example.tests.checkout.CheckoutTest@6200f9cb]" started-at="2025-04-15T14:31:33 GMT+07:00" name="afterSuite" finished-at="2025-04-15T14:31:33 GMT+07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- org.example.tests.checkout.CheckoutTest -->
+    </test> <!-- Check Out Test  -->
+  </suite> <!-- Fashion Style Website Test Suite -->
+</testng-results>

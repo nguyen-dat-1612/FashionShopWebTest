@@ -1,0 +1,7 @@
+org\example\utils\ConfigReader.class
+org\example\pages\HomePage.class
+org\example\utils\DriverManager.class
+org\example\utils\TestUtils.class
+org\example\pages\BasePage.class
+org\example\Main.class
+org\example\enums\Browsers.class
